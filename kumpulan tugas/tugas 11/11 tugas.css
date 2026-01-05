@@ -1,0 +1,151 @@
+/* ===============================
+   RESET DASAR
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   BODY
+================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    padding: 30px;
+}
+
+/* ===============================
+   CONTAINER FORM
+================================ */
+.form-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   JUDUL
+================================ */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #34495e;
+    font-size: 18px;
+}
+
+/* ===============================
+   GARIS PEMBATAS
+================================ */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* ===============================
+   LABEL & PARAGRAF
+================================ */
+label,
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* ===============================
+   INPUT, SELECT, TEXTAREA
+================================ */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Fokus input */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* ===============================
+   RADIO & CHECKBOX
+================================ */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+/* ===============================
+   INPUT FILE & COLOR
+================================ */
+input[type="file"],
+input[type="color"] {
+    margin-top: 5px;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hover button */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Tombol reset */
+button[type="reset"] {
+    background-color: #e74c3c;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* ===============================
+   INPUT DISABLED & READONLY
+================================ */
+input:disabled {
+    background-color: #eee;
+    color: #777;
+}
+
+input[readonly] {
+    background-color: #fafafa;
+}
