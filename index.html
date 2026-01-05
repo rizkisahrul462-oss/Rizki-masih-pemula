@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- SEO & Metadata -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Portofolio pribadi Rizki Sahrul Mubarok mahasiswa Teknik Informatika">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portofolio: Rizki Sahrul Mubarok">
+    <meta property="og:image" content="foto.jpg">
+
+    <title>Portofolio Rizki Sahrul Mubarok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <!-- Header berisi judul utama dan navigasi -->
+    <header>
+        <h1 tabindex="0">Rizki Sahrul Mubarok</h1>
+        <p>Mahasiswa <abbr title="Teknik Informatika">TI</abbr> yang sedang belajar Web Development</p>
+
+        <!-- Navigasi utama -->
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#projek">Projek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="kumpulan tugas/kumpulan tugas.html">Kumpulan Tugas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <!-- Konten utama halaman -->
+    <main>
+        <!-- ===== Tentang Saya ===== -->
+        <section id="tentang" aria-labelledby="judul-tentang">
+            <h2 id="judul-tentang">Tentang Saya</h2>
+
+            <article>
+                <img src="foto1.jpeg" alt="Foto Rizki Sahrul Mubarok mengenakan pakaian formal">
+                <p>
+                    Saya adalah mahasiswa Teknik Informatika di Universitas Mayasari Bakti.
+                    Saat ini saya fokus mempelajari HTML, CSS, dan dasar Web Development.
+                </p>
+                <time datetime="2026-01-05">Terakhir diperbarui: 5 Januari 2026</time>
+            </article>
+
+            <!-- Aside sebagai informasi tambahan -->
+            <aside>
+                <p aria-describedby="info-tambahan" tabindex="0">
+                    Tertarik pada frontend dan UI sederhana.
+                </p>
+                <span id="info-tambahan">Informasi tambahan tentang minat</span>
+            </aside>
+        </section>
+
+        <!-- ===== Riwayat Pendidikan ===== -->
+        <section id="pendidikan">
+            <h2>Riwayat Pendidikan</h2>
+
+            <!-- Tabel pendidikan -->
+            <table>
+                <caption>Riwayat Pendidikan & Pengalaman</caption>
+
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th colspan="2">Institusi / Keterangan</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>2023 - Sekarang</td>
+                        <td colspan="2">Universitas Mayasari Bakti - Teknik Informatika</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Data dapat berubah sesuai pengalaman</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- ===== Keahlian ===== -->
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+
+            <!-- Unordered List -->
+            <ul>
+                <li>HTML Dasar</li>
+                <li>CSS Dasar</li>
+                <li>Git Dasar</li>
+            </ul>
+
+            <!-- Description List -->
+            <dl>
+                <dt>Frontend</dt>
+                <dd>Membangun tampilan website</dd>
+
+                <dt>Accessibility</dt>
+                <dd>Membuat web ramah semua pengguna</dd>
+            </dl>
+        </section>
+
+        <!-- ===== Projek ===== -->
+        <section id="projek">
+            <h2>Projek</h2>
+
+            <article>
+                <img src="poster.jpg" alt="Tampilan project website sederhana">
+                <p>Website portofolio sederhana menggunakan HTML dan CSS.</p>
+
+                <a href="https://github.com" target="_blank">Lihat Project</a>
+            </article>
+
+            <!-- Multimedia iframe -->
+            <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Video Project"
+                aria-label="Video contoh projek"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- ===== Form Kontak ===== -->
+        <section id="kontak">
+            <h2>Kontak Saya</h2>
+
+            <form aria-labelledby="kontak">
+                <fieldset>
+                    <legend>Formulir Kontak</legend>
+
+                    <label>
+                        Nama:
+                        <input type="text" name="nama" required minlength="3">
+                    </label>
+
+                    <label>
+                        Email:
+                        <input type="email" name="email" required>
+                    </label>
+
+                    <label>
+                        Nomor HP:
+                        <input type="tel" name="nomor" required maxlength="13">
+                    </label>
+
+                    <label>
+                        Pesan:
+                        <textarea name="pesan" required minlength="5"></textarea>
+                    </label>
+
+                    <!-- Radio Button -->
+                    <p>Jenis Pesan:</p>
+                    <label><input type="radio" name="jenis" required> Pertanyaan</label>
+                    <label><input type="radio" name="jenis"> Saran</label>
+
+                    <!-- Checkbox -->
+                    <label>
+                        <input type="checkbox" required>
+                        Saya setuju data diproses
+                    </label>
+
+                    <button type="submit">Kirim</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Footer halaman -->
+    <footer>
+        <p>&copy; 2026 Rizki Sahrul Mubarok</p>
+    </footer>
+</body>
+</html>
