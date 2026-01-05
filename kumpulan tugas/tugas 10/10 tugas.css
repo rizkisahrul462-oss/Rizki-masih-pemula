@@ -1,0 +1,80 @@
+/* ===============================
+   RESET DASAR
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   BODY
+================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    padding: 40px;
+}
+
+/* ===============================
+   JUDUL HALAMAN
+================================ */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* ===============================
+   CONTAINER LIST
+================================ */
+.list {
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   UL & LI
+================================ */
+.list ul {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 12px;
+}
+
+/* ===============================
+   LINK TUGAS
+================================ */
+.list a {
+    display: block;
+    text-decoration: none;
+
+    background-color: #3498db;
+    color: #ffffff;
+
+    padding: 12px 15px;
+    border-radius: 5px;
+
+    font-size: 14px;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+/* ===============================
+   HOVER & ACTIVE
+================================ */
+.list a:hover {
+    background-color: #2980b9;
+    transform: translateX(5px);
+}
+
+.list a:active {
+    transform: scale(0.98);
+}
